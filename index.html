@@ -17,6 +17,7 @@
 <body>
 
   <!-- Top Bar -->
+  <!-- Top Bar -->
   <div class="top-bar">
     <div class="container top-bar-content">
       <div class="top-badges">
@@ -27,6 +28,10 @@
         <span><i class="fa-solid fa-heart-pulse text-amber"></i> Healthy Life</span>
       </div>
       <div class="top-contact">
+        <a href="mailto:proshineservice26@gmail.com" class="top-link">
+          <i class="fa-solid fa-envelope"></i> contact@proshine.in
+        </a>
+        <span>•</span>
         <a href="tel:9620020046" class="phone-link">
           <i class="fa-solid fa-phone-volume phone-ring"></i> 9620020046
         </a>
@@ -355,15 +360,55 @@
   </section>
 
   <!-- Footer -->
+ <!-- Footer -->
   <footer class="main-footer">
     <div class="container text-center footer-content">
       <div class="footer-badges">
         <span>Trusted Care</span> • <span>Spotless Results</span> • <span>Happier You</span>
       </div>
+      
+      <!-- Contact & Legal Links -->
+      <div class="footer-links">
+        <a href="mailto:proshineservice26@gmail.com"><i class="fa-solid fa-envelope"></i> contact@proshine.in</a>
+        <span>•</span>
+        <a href="tel:9620020046"><i class="fa-solid fa-phone"></i> +91 9620020046</a>
+        <span>•</span>
+        <button type="button" class="legal-link" onclick="openTermsModal()">Terms & Conditions</button>
+      </div>
+
       <p class="footer-slogan">Cleaner Home. Happier You. ♥</p>
       <p class="footer-copy">© 2026 ProShine Cleaning Service. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- Terms & Conditions Modal -->
+  <div id="termsModal" class="modal-overlay">
+    <div class="modal-content pop-card">
+      <div class="modal-header">
+        <h3>Terms & Conditions</h3>
+        <button class="modal-close" onclick="closeTermsModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>1. Scope of Service</h4>
+        <p>ProShine provides residential and commercial deep cleaning as per the package configuration selected during booking.</p>
+
+        <h4>2. Access & Utilities</h4>
+        <p>Clients are requested to provide continuous water and electricity supply at the premises to enable efficient machine and cleaning operation.</p>
+
+        <h4>3. Safety & Valuables</h4>
+        <p>Please secure fragile items, jewelry, cash, and personal valuables prior to the arrival of the cleaning team.</p>
+
+        <h4>4. Pricing & Payment</h4>
+        <p>All package prices displayed are flat estimates based on standard property conditions. Full payment is due immediately upon completion and inspection of the cleaning service.</p>
+
+        <h4>5. Satisfaction & Re-Clean Policy</h4>
+        <p>Any concerns regarding service quality must be reported within 24 hours of service delivery for prompt inspection and resolution.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-dark pop-btn" onclick="closeTermsModal()">I Understand & Close</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Floating Mobile Action Bar -->
   <div class="floating-actions">
