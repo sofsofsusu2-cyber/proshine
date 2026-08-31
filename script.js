@@ -212,3 +212,23 @@ function bookCalculatedService() {
     updateEstimator();
   }
 })();
+/**
+ * Terms and Conditions Modal Handlers
+ */
+function openTermsModal() {
+  const modal = document.getElementById('termsModal');
+  if (modal) modal.classList.add('active');
+}
+
+function closeTermsModal() {
+  const modal = document.getElementById('termsModal');
+  if (modal) modal.classList.remove('active');
+}
+
+// Close modal when clicking outside the box
+window.addEventListener('click', (e) => {
+  const modal = document.getElementById('termsModal');
+  if (e.target === modal) {
+    closeTermsModal();
+  }
+});
