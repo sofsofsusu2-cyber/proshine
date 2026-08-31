@@ -421,6 +421,7 @@ body {
 
 .gradient-text {
   background: linear-gradient(135deg, #16a34a, #0174be);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1042,4 +1043,131 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
+}
+/* ================= TOP CONTACT & FOOTER LINKS ================= */
+.top-contact .top-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.top-contact .top-link:hover {
+  color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.footer-links a, .footer-links .legal-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover, .footer-links .legal-link:hover {
+  color: #4ade80;
+  text-decoration: underline;
+}
+
+/* ================= TERMS MODAL POPUP ================= */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 32, 68, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 550px;
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+}
+
+.modal-header {
+  background: var(--color-dark);
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.modal-body h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.modal-body h4:first-child {
+  margin-top: 0;
+}
+
+.modal-footer {
+  padding: 14px 20px;
+  border-top: 1px solid #e2e8f0;
+  text-align: right;
+  background: #f8fafc;
+}
+
+.modal-footer .btn {
+  padding: 8px 18px;
+  font-size: 13px;
 }
