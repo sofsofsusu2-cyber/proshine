@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProShine Cleaning Service | One Phone for a Cleaner, Better Life</title>
+  <meta name="description" content="One Phone for a Cleaner, Better Life! ProShine professional deep cleaning services for Kitchen, Rooms, Washroom, and Full Homes." />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-badges">
+        <span><i class="fa-solid fa-sparkles text-amber"></i> Clean Home</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-face-smile text-amber"></i> Happy Home</span>
+        <span>•</span>
+        <span><i class="fa-solid fa-heart-pulse text-amber"></i> Healthy Life</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:9620020046" class="phone-link">
+          <i class="fa-solid fa-phone-volume phone-ring"></i> 9620020046
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="container nav-content">
+      <a href="#" class="brand-logo pop-target">
+        <div class="logo-icon">
+          <i class="fa-solid fa-broom"></i>
+        </div>
+        <div>
+          <span class="brand-name">Pro<span class="text-emerald">Shine</span></span>
+          <span class="brand-sub">Cleaning Service</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#services" class="nav-item">Packages</a>
+        <a href="#calculator" class="nav-item">Price Estimator</a>
+        <a href="#features" class="nav-item">Why Choose Us</a>
+      </nav>
+
+      <a href="tel:9620020046" class="btn btn-call-nav pop-btn">
+        <i class="fa-solid fa-phone-volume phone-ring"></i>
+        <span>Call: 9620020046</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+    <div class="container hero-content">
+      
+      <h1 class="hero-title">
+        YOUR HOME DESERVES A <br />
+        <span class="gradient-text">FRESH START.</span>
+      </h1>
+
+      <div class="hero-tag pop-target">
+        <span class="pulse-dot"></span>
+        Reliable deep cleaning made effortless
+      </div>
+
+      <div class="quote-box pop-target">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <p>"A clean space brings peace to mind, positivity to life and pride to your home."</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-dark pop-btn">
+          <i class="fa-solid fa-layer-group text-emerald"></i> View Packages
+        </a>
+        <a href="https://wa.me/919620020046?text=Hi%20ProShine,%20I%20want%20to%20book%20a%20deep%20cleaning" target="_blank" class="btn btn-whatsapp pop-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+
+      <div class="trust-mini-bar">
+        <div class="trust-pill pop-target"><i class="fa-solid fa-circle-check text-emerald"></i> Verified Cleaners</div>
+        <div class="trust-pill pop-target"><i class="fa-solid fa-circle-check text-emerald"></i> Safe & Eco-Friendly</div>
+        <div class="trust-pill pop-target"><i class="fa-solid fa-circle-check text-emerald"></i> On-Time Guaranteed</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Packages & Services Section -->
+  <section id="services" class="section bg-light">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Standard Pricing Menu</span>
+        <h2 class="section-title">Our Deep Cleaning Packages</h2>
+        <p class="section-subtitle">Select services across cards, then book individually or checkout your full combo below.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- Kitchen Deep Cleaning -->
+        <div class="service-card border-orange pop-card" id="card-kitchen">
+          <div class="card-header bg-orange">
+            <div class="card-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+            <h3>Kitchen Deep Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Kitchen Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Thorough cleaning for a hygienic and healthy kitchen.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="toggleKitchenTier(this, 'Kitchen Deep Cleaning', 1499)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> Kitchen Cleaning</span>
+                <span class="text-orange font-bold">₹1499</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('kitchen')" class="btn btn-card bg-orange pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Room Deep Cleaning -->
+        <div class="service-card border-green pop-card" id="card-room">
+          <div class="card-header bg-green">
+            <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
+            <h3>Room Deep Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80" alt="Room Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Dust-free, fresh and spotless rooms for your comfort.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'room', '1 Room', 799)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 1 ROOM</span>
+                <span class="text-green font-bold">₹799</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'room', '2 Rooms', 899)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 2 ROOMS</span>
+                <span class="text-green font-bold">₹899</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'room', '3 Rooms', 999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 3 ROOMS</span>
+                <span class="text-green font-bold">₹999</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('room')" class="btn btn-card bg-green pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Washroom Deep Cleaning -->
+        <div class="service-card border-blue pop-card" id="card-washroom">
+          <div class="card-header bg-blue">
+            <div class="card-icon"><i class="fa-solid fa-toilet"></i></div>
+            <h3>Washroom Deep Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Washroom Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Sparkling clean washrooms for better hygiene and health.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'washroom', '1 Washroom', 999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 1 WASHROOM</span>
+                <span class="text-blue font-bold">₹999</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'washroom', '2 Washrooms', 1199)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 2 WASHROOMS</span>
+                <span class="text-blue font-bold">₹1199</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'washroom', '3 Washrooms', 1499)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 3 WASHROOMS</span>
+                <span class="text-blue font-bold">₹1499</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('washroom')" class="btn btn-card bg-blue pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Full Home Deep Cleaning -->
+        <div class="service-card border-purple pop-card" id="card-fullhome">
+          <div class="card-header bg-purple">
+            <div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <h3>Full Home Deep Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Full Home Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Complete deep cleaning for a spotless and beautiful home.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'fullhome', '1 BHK', 4999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 1 BHK</span>
+                <span class="text-purple font-bold">₹4999</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'fullhome', '2 BHK', 7999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 2 BHK</span>
+                <span class="text-purple font-bold">₹7999</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'fullhome', '3 BHK', 9999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> 3 BHK</span>
+                <span class="text-purple font-bold">₹9999</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'fullhome', 'Villa / Duplex', 12999)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> VILLA</span>
+                <span class="text-purple font-bold">₹12999</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('fullhome')" class="btn btn-card bg-purple pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Master Checkout Bar -->
+      <div id="masterCheckoutBar" class="master-checkout-bar pop-target">
+        <div class="checkout-summary">
+          <div class="checkout-label">SELECTED SERVICES:</div>
+          <div id="selectedItemsText" class="checkout-items">No service selected yet (Tap options above)</div>
+        </div>
+        <div class="checkout-action-wrap">
+          <div class="checkout-total-wrap">
+            <span class="total-tag">TOTAL:</span>
+            <span id="masterTotalPrice" class="total-price">₹0</span>
+          </div>
+          <button onclick="bookAllSelectedTiers()" class="btn btn-whatsapp-combo pop-btn">
+            <i class="fa-brands fa-whatsapp text-xl"></i> Book Selected Services
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Instant Price Estimator -->
+  <section id="calculator" class="section bg-dark">
+    <div class="container max-w-md-center">
+      
+      <div class="section-header text-white">
+        <span class="section-tag text-emerald">Fast & Transparent</span>
+        <h2 class="section-title text-white">Instant Price Estimator</h2>
+        <p class="section-subtitle text-slate">Pick your service and book directly on WhatsApp in seconds.</p>
+      </div>
+
+      <div class="calculator-card pop-target">
+        <div class="calc-grid">
+          
+          <div class="form-group">
+            <label class="form-label" for="calcService">1. Choose Service</label>
+            <select id="calcService" onchange="updateEstimator()" class="form-select">
+              <option value="kitchen">Kitchen Deep Cleaning</option>
+              <option value="room" selected>Room Deep Cleaning</option>
+              <option value="washroom">Washroom Deep Cleaning</option>
+              <option value="fullhome">Full Home Deep Cleaning</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcOption">2. Select Configuration</label>
+            <select id="calcOption" onchange="updateEstimatorPrice()" class="form-select">
+              <option value="₹799">1 Room (₹799)</option>
+              <option value="₹899">2 Rooms (₹899)</option>
+              <option value="₹999">3 Rooms (₹999)</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="calc-footer">
+          <div>
+            <div class="calc-price-label">Estimated Total (Flat)</div>
+            <div id="calcPriceDisplay" class="calc-price-value">₹799</div>
+          </div>
+
+          <button onclick="bookCalculatedService()" class="btn btn-whatsapp-lg pop-btn">
+            <i class="fa-brands fa-whatsapp"></i> Book This Plan via WhatsApp
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section bg-white">
+    <div class="container">
+      <div class="features-grid">
+        
+        <div class="feature-card pop-card">
+          <div class="feature-icon bg-blue-subtle text-blue">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <h4>Professional & Trusted</h4>
+          <p>Trained and background verified staff</p>
+        </div>
+
+        <div class="feature-card pop-card">
+          <div class="feature-icon bg-green-subtle text-green">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h4>Safe & Eco-Friendly</h4>
+          <p>Non-toxic, safe for kids & pets</p>
+        </div>
+
+        <div class="feature-card pop-card">
+          <div class="feature-icon bg-amber-subtle text-orange">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h4>On Time Every Time</h4>
+          <p>Punctual & efficient delivery</p>
+        </div>
+
+        <div class="feature-card pop-card">
+          <div class="feature-icon bg-purple-subtle text-purple">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <h4>Satisfaction Guaranteed</h4>
+          <p>100% spotless quality promise</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call Strip -->
+  <section class="cta-strip">
+    <div class="container text-center">
+      <span class="cta-tag pop-target">Call Now For A Sparkling Clean Home!</span>
+      <h3 class="cta-heading">ONE CALL. WE CLEAN IT ALL!</h3>
+      <a href="tel:9620020046" class="cta-phone pop-btn">
+        <i class="fa-solid fa-phone-volume phone-ring-intense"></i> 9620020046
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container text-center footer-content">
+      <div class="footer-badges">
+        <span>Trusted Care</span> • <span>Spotless Results</span> • <span>Happier You</span>
+      </div>
+      <p class="footer-slogan">Cleaner Home. Happier You. ♥</p>
+      <p class="footer-copy">© 2026 ProShine Cleaning Service. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Action Bar -->
+  <div class="floating-actions">
+    <a href="https://wa.me/919620020046?text=Hi%20ProShine,%20I%20want%20to%20book%20a%20cleaning" target="_blank" class="float-btn float-wa pop-btn" aria-label="WhatsApp">
+      <span class="radar-wave"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:9620020046" class="float-btn float-call pop-btn" aria-label="Call">
+      <span class="radar-wave wave-blue"></span>
+      <i class="fa-solid fa-phone-volume phone-ring"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
