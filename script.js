@@ -4,27 +4,39 @@
 
 // Estimator service configuration data
 const serviceData = {
-  kitchen: [{ label: 'Standard Kitchen (Full Degrease)', price: '₹1499' }],
+  Car: [
+    { label: 'Hatchback', price: '₹199' },
+    { label: 'Sedan', price: '₹249' },
+    { label: 'SUV', price: '₹349' }
+  ],
+  tank: [
+    { label: 'Overhead(1000l)', price: '₹199' },
+    { label: 'Overhead(2000l)', price: '₹349' },
+    { label: 'Sump (per 5000l)', price: '₹499' }
+  ],
+  kitchen: [{ label: 'Standard Kitchen (Full Degrease)', price: '₹299' }],
   room: [
-    { label: '1 Room', price: '₹799' },
-    { label: '2 Rooms', price: '₹899' },
-    { label: '3 Rooms', price: '₹999' }
+    { label: '1 Room', price: '₹199' },
+    { label: '2 Rooms', price: '₹349' },
+    { label: '3 Rooms', price: '₹499' }
   ],
   washroom: [
-    { label: '1 Washroom', price: '₹999' },
-    { label: '2 Washrooms', price: '₹1199' },
-    { label: '3 Washrooms', price: '₹1499' }
+    { label: '1 Washroom', price: '₹149' },
+    { label: '2 Washrooms', price: '₹249' },
+    { label: '3 Washrooms', price: '₹349' }
   ],
   fullhome: [
-    { label: '1 BHK Complete', price: '₹4999' },
-    { label: '2 BHK Complete', price: '₹7999' },
-    { label: '3 BHK Complete', price: '₹9999' },
-    { label: 'Villa / Duplex', price: '₹12999' }
+    { label: '1 BHK Complete', price: '₹999' },
+    { label: '2 BHK Complete', price: '₹1999' },
+    { label: '3 BHK Complete', price: '₹2999' },
+    { label: 'Villa / Duplex', price: '₹4999' }
   ]
 };
 
 // Memory for active selected tiers across cards
 const selectedTiers = {
+  Car: null,
+  tank: null,
   kitchen: null,
   room: null,
   washroom: null,
@@ -190,7 +202,7 @@ function updateEstimatorPrice() {
   const optionSelect = document.getElementById('calcOption');
   const displayElem = document.getElementById('calcPriceDisplay');
   if (optionSelect && displayElem) {
-    displayElem.innerText = optionSelect.value || '₹1499';
+    displayElem.innerText = optionSelect.value || '₹299';
   }
 }
 
