@@ -115,7 +115,67 @@
       </div>
 
       <div class="cards-grid">
+ <!-- Car   Cleaning (NEW SERVICE) -->
+        <div class="service-card border-teal pop-card" id="card-car">
+          <div class="card-header bg-teal">
+            <div class="card-icon"><i class="fa-solid fa-car-side"></i></div>
+            <h3>Car   Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=600&q=80" alt="Car   Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Interior vacuuming, foam wash, seat shampoo & exterior polish.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'car', 'Hatchback', 199)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> HATCHBACK</span>
+                <span class="text-teal font-bold">₹199</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'car', 'Sedan', 249)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> SEDAN</span>
+                <span class="text-teal font-bold">₹249</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'car', 'SUV / Luxury', 299)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> SUV / LUXURY</span>
+                <span class="text-teal font-bold">₹299</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('car')" class="btn btn-card bg-teal pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
 
+        <!-- Water Tank Cleaning (NEW SERVICE) -->
+        <div class="service-card border-cyan pop-card" id="card-tank">
+          <div class="card-header bg-cyan">
+            <div class="card-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+            <h3>Water Tank Cleaning</h3>
+          </div>
+          <div class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=600&q=80" alt="Water Tank Cleaning" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">Sludge removal, high-pressure washing & anti-bacterial sanitization.</p>
+            <div class="price-list">
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'tank', 'Overhead Tank (Up to 1000L)', 199)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> OVERHEAD (1000L)</span>
+                <span class="text-cyan font-bold">₹199</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'tank', 'Overhead Tank (Up to 2000L)', 299)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> OVERHEAD (2000L)</span>
+                <span class="text-cyan font-bold">₹299</span>
+              </div>
+              <div class="price-row selectable-tier" onclick="selectTier(this, 'tank', 'Underground Sump (Up to 5000L)', 499)">
+                <span class="tier-label"><i class="fa-regular fa-circle tier-radio"></i> SUMP (Per 5000L)</span>
+                <span class="text-cyan font-bold">₹499</span>
+              </div>
+            </div>
+            <button onclick="bookSingleCard('tank')" class="btn btn-card bg-cyan pop-btn">
+              Book Now
+            </button>
+          </div>
+        </div>
         <!-- Kitchen  Cleaning -->
         <div class="service-card border-orange pop-card" id="card-kitchen">
           <div class="card-header bg-orange">
